@@ -1,0 +1,106 @@
+
+React - 3 App
+React-Redux (2 App )
+React-GraphQL-Apollo (1 App)
+react native 
+jest ezym
+chai mocha
+========================
+GitHub
+------------
+Nginx
+Docker
+
+
+html
+css
+Javascript
+25-30
+
+> npm 
+> setup of react
+> javascript
+
+Es6
+
+
+/////////////////////////////
+            npm
+////////////////////////////
+Node package Manager
+
+node_moules/dependency/ packages
+
+
+>>>>>>Local dependency
+>>>>>>Global dependency
+
+[
+    {
+        "name":"john",
+        "rollno":1
+    },
+    {
+        "name":"ammy",
+        "rollno":2
+    }
+]
+
+///////////////////////////
+     Package.json
+///////////////////////
+>>name
+>>version
+>>description
+>>author
+>>license
+>>dependency
+>>Script(start,test,build)
+
+
+///////////////////////
+How to Create package.json
+///////////////////////
+> Open your CMD/Terminal
+> Navigate to the folder using cmd where you want to create
+> npm init
+> Answer all question
+> type "yes"
+
+///////////////////////
+How to install local dependency
+///////////////////////
+> Open your CMD/Terminal
+> Navigate to the folder using cmd where you want to create
+> npm i <package name>/ npm install <package name>
+
+///////////////////////
+How to install Global dependency
+///////////////////////
+Win
+> Run command prompt as adminstrator
+> npm i -g create-react-app
+
+Mac/Linux
+> Open your Terminal
+> sudo npm i -g create-react-app
+
+
+** Global package doesnt add to package.json
+** They are system dependent
+>>To Create/ to run application
+
+/////////////////////////////
+How to Setup react application
+/////////////////////////////
+Win
+(one task)
+> Run command prompt as adminstrator
+> npm i -g create-react-app
+(For every application)
+> Navigate to the folder using cmd where you want to create
+> create-react-app myapp
+> cd myapp
+> npm start
+> localhost:3000
+
