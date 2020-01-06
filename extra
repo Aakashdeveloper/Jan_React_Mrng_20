@@ -104,3 +104,50 @@ Win
 > npm start
 > localhost:3000
 
+
+
+
+////////Javascript//////////
+Es5 => Ecma script5
+Es6 => Ecma script6
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+Class **** We dont have classes
+-------------------------------
+//Es6
+const add = (a,b) => { return a+b}
+
+Class
+
+<table>
+
+<p>
+<span>
+
+
+
+
+///////////////////////////////
+    Component
+////////////////////////////
+Functional                       |          Class Base
+---------------------------------------------------------------
+Dumb Component,                  |    Logical Component
+ProjectionComponent,             |
+Display Component                |
+                                 |
+Light in weight                  | Heavy as compare to Functional
+It cannot maintain State         | It Can maintain State
+
+
+---------
+State
+Props
+
+--------------------------------------
+
+
