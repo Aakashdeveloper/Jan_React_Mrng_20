@@ -1,15 +1,29 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Header from './component/Header'
+import Header from './component/Header';
+import NewsList from './component/NewsList';
+import JSON from './db.json';
 
-const App = () => {
-    return(
-        <div>
-            <Header/>
-            <h1>This is React App</h1>
-            <h2>This is my page</h2>
-        </div>
-    )
+class App extends Component{
+
+    constructor(){
+        super()
+
+        this.state={
+            news:JSON
+        }
+    }
+
+
+    render(){
+        return(
+            <div>
+                <Header/>
+                <NewsList newsData={this.state.news}/>
+            </div>
+        )
+    }
 }
 
 ReactDOM.render(<App/>, document.getElementById('root'));
+

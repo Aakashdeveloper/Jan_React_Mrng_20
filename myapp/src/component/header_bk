@@ -1,0 +1,46 @@
+import React, {Component} from 'react';
+
+class Header extends Component {
+    render(){
+
+        const mycss = {
+            header:{
+                background:'teal'
+            },
+            logo:{
+                color:'#fff',
+                fontSize:'40px',
+                textAlign:'center'
+            }
+        }
+
+        return(
+            <header style={mycss.header}>
+                <div style={mycss.logo}>
+                    React App
+                </div>
+                <center>
+                <input/>
+                </center>
+                
+            </header>
+        ) 
+    }
+}
+
+export default Header;
+
+
+
+/*
+const Header = () => {
+    return(
+        <div>
+            <center>
+                <h2>React App</h2>
+            </center>
+            <hr/>
+        </div>
+    )
+}
+*/

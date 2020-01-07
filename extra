@@ -145,9 +145,19 @@ It cannot maintain State         | It Can maintain State
 
 
 ---------
-State
-Props
+State => Act like local variable
+Props => use to pass state from one component to another
+
+
+Component A      ====>         Component B 
+state1           props          State2
+
 
 --------------------------------------
+> Tag name
+> ClassName
+> Id
 
-
+=============
+Map in javascript
+filter in javascript
