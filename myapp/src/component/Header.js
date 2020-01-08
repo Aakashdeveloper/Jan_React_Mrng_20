@@ -7,19 +7,27 @@ class Header extends Component {
         super()
 
         this.state={
-            title:'React News App'
+            title:'React News App',
+            keyword:'User Text Here'
         }
 
+    }
+
+    inputChange(event){
+        console.log(event.target.value);
+        this.setState({"keyword":event.target.value?event.target.value:"User Text here"})
     }
 
     render(){
         return(
             <header>
-                <div className="logo">
+                <div className="logo"
+                onClick={()=>console.log("Clicked>>>>")}>
                     {this.state.title}
                 </div>
                 <center>
-                <input/>
+                <input onChange={this.inputChange.bind(this)}/>
+                <p>{this.state.keyword}</p>
                 </center>
             </header>
         ) 

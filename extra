@@ -161,3 +161,32 @@ state1           props          State2
 =============
 Map in javascript
 filter in javascript
+
+var a = [0,1,2,3]
+a.map((data) => { return data*2})
+[0,2,4,6]
+a.filter((data) => { return data*2})
+[1,2,3]
+
+var age = [12,34,18,22,26]
+age.filter((data => return { data>18}))
+[34,22,26]
+age.map((data => {return  data>18}))
+[false, true, false, true, true]
+
+
+call
+apply
+bind
+
+
+function userinfo(){
+    return this.class
+}
+
+var john={
+    name:"john",
+    class:"ui"
+}
+
+userinfo.bind(john)
