@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Home =() => {
+const PostDetails =(props) => {
+    console.log(props)
     return(
-        <div className="panel panel-primary">
+        <div className="panel panel-warning">
             <div className="panel-heading">
-                <h2>Home Page</h2>
+                <h2>PostDetails Page for {props.match.params.topic}</h2>
             </div>
             <div className="panel-body">
                 <p>
@@ -16,4 +17,4 @@ const Home =() => {
     )
 }
 
-export default Home
+export default PostDetails
