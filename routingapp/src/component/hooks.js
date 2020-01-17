@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 
 function HooksComp(){
+    
     const [title] = useState('React Hooks Page');
     const [counter, setCounter] = useState(1)
 
