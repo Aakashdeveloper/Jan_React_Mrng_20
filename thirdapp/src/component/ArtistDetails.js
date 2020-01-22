@@ -1,5 +1,6 @@
 import React , {Component} from 'react';
-import Header from './Header'
+import Header from './Header';
+import AlbumList from './albumList';
 
 const url = 'http://localhost:8900/artists';
 
@@ -23,6 +24,7 @@ class ArtistDetails extends Component {
                         <div className="bio_text">
                             {this.state.details.bio}
                         </div>
+                        <AlbumList albumd={this.state.details.albums}/>
                     </div>
 
                 </div>

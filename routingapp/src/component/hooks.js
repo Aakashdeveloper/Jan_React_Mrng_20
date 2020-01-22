@@ -1,9 +1,28 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
+import axios from 'axios';
 
+const url = 'http://localhost:8900/artists';
 function HooksComp(){
     
     const [title] = useState('React Hooks Page');
-    const [counter, setCounter] = useState(1)
+    const [counter, setCounter] = useState(1);
+    const [artist, setArtist] = useState(0);
+
+    /*useEffect(() => {
+        fetch(url)
+            .then((res) => res.json())
+            .then((data) => {
+                setArtist(data)
+            })
+    })*/
+    
+    useEffect(() => {
+        axios.get(url)
+            .then((res) => {
+                const mydata = res.data;
+                this.setArtist(mydata)
+            })
+    })
 
     return(
         <div>
