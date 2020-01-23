@@ -200,3 +200,6 @@ userinfo.bind(john)
 
 npm i -g json-server
 > json-server --watch db.json --port 8900
+
+
+view => action => reducer=> store
