@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import * as actions from '../actions';
 import { connect }from 'react-redux';
+import List from '../component/list';
 
 class App extends Component {
 
@@ -8,10 +9,12 @@ class App extends Component {
         this.props.productList()
     }
 
+
     render(){
         return(
             <div>
                 <h1>Redux App</h1>
+                <List prodlist={this.props.data} />
             </div>
         )
     }
