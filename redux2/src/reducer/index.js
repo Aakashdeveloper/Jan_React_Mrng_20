@@ -1,8 +1,8 @@
-import { combineReducer} from 'redux';
+import { combineReducers} from 'redux';
 import articles from './articleReducer';
 import gallery from './galleryReducer'
 
-const rootReducer = combineReducer({
+const rootReducer = combineReducers({
     articles,
     gallery
 })
