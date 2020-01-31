@@ -3,37 +3,37 @@ import { Link} from 'react-router-dom';
 
 const renderArticle = ({article}) => {
     if(article){
-        return article.map((item) => {
+        return article.map((item,index) => {
             return(
-                <Link to="/">
-                    <div className="left" 
-                    style={{background:`url(/images/articles/${item.img})`}}>
-                    </div>
-                    <div className="right">
-                        <h3>{item.title}</h3>
-                        <div className="category-tag">
-                            {item.category}
+                <Link to={`/details/${item.id}`} className="item" key={index}>
+                        <div className="left"
+                        style={{background:`url(/images/articles/${item.img})`}}>
+
                         </div>
-                        <div className="tags">
-                            <span>
-                                <i className="fa fa-eye">
-                                   
-                                </i> {item.views}
-                            </span>
-                            <span>
-                                <i className="fa fa-thumbs-up">
-                                    
-                                </i> {item.likes[0]}
-                            </span>
-                            <span>
-                                 <i className="fa fa-thumbs-down">
-                                   
-                                </i>{item.likes[1]}
-                            </span>
+                        <div className="right">
+                            <h3>{item.title}</h3>
+                            <div className="category-tag">
+                                {item.category}
+                            </div>
+                            <div className="tags">
+                                <span>
+                                    <i className="fa fa-eye">
+                                        {item.views}
+                                    </i>
+                                </span>
+                                <span>
+                                    <i className="fa fa-thumbs-up">
+                                        {item.likes[0]}
+                                    </i>
+                                </span>
+                                <span>
+                                    <i className="fa fa-thumbs-down">
+                                        {item.likes[1]}
+                                    </i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </Link>
-            )
+                    </Link>            )
         })
     }
 }
