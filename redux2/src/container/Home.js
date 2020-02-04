@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 import ArticleNews from '../component/Home/ArticleNews';
 import LatestNews from '../component/Home/LatestNews';
 import GalleryNews from '../component/Home/GalleryNews';
+import Panel from '../component/Home/testcompnent'
 
 class Home extends Component {
     componentDidMount(){
@@ -20,6 +21,7 @@ class Home extends Component {
                 <LatestNews latestD={this.props.myarticle.latestnews}/>
                 <ArticleNews article={this.props.myarticle.articles}/>
                 <GalleryNews galleryD={this.props.galleryS.galdata}/>
+                <Panel/>
                 
             </div>
         )

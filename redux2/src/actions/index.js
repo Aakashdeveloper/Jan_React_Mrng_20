@@ -66,3 +66,36 @@ export function handleLikes(array,id){
         payload:output
     }
 }
+
+export function postNews(title,body){
+    var random = Math.floor(Math.random()*1000)
+    var data ={
+        "id": random,
+        "title": title,
+       "body": body,
+      "category": "Sports",
+      "img": "2.jpg",
+      "date": "21/21/1944",
+      "author": "Mary Bottom",
+      "views": 456,
+      "likes": [
+        65,
+        12
+      ]
+    }
+
+    fetch(`${url}/articles/`,{
+        method:'POST',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+
+    .then((response) => response.json())
+    return{
+        type:'POST_NEWS',
+        payload:''
+    }
+}
