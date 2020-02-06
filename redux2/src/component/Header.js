@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 const Header = () => {
     return(
         <header>
             <div>
-                <Link to="/">Redux with React API</Link>
-                <Link to="/forms">Add News</Link>
+                <h1>My Header</h1>
             </div>
         </header>
     )

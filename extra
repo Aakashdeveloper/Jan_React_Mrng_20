@@ -205,3 +205,27 @@ npm i -g json-server
 view => action => reducer=> store
 
  npm i redux react-redux redux-promise react-slick
+
+ //////
+ Docker
+ //////
+ Docker images
+
+ Containers
+ docker build . -t nareshit/janReact
+ docker image ls
+ docker run -p 7008:3000 nareshit/janReact
+ ///
+ nginx.conf
+
+   server {
+        listen       8081;
+        server_name  localhost;
+
+        location / {
+	     root   /var/www/react-app;
+            index  index.html index.htm;
+        }
+    }
+
+npm i -g create-react-native-app
